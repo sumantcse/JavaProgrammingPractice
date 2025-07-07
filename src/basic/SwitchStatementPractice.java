@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class SwitchStatementPractice {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
+//		Scanner sc = new Scanner(System.in);
+//		int num = sc.nextInt();
+		int num = 3;
 		switch(num) {
 		case 1:
 			System.out.println("Monday");
