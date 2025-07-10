@@ -3,13 +3,16 @@ package oops;
 public class InheritancePractice {
 
 	public static void main(String[] args) {
-		Devloper emp = new Devloper();
-		emp.name = "Sumant";
-		emp.salary = 470000;
-		emp.programminglanguage ="Java";
+		Employee emp = new Employee();
+
+		Devloper Dev = new Devloper();
+		Dev.name = "Sumant";
+		Dev.salary = 470000;
+		Dev.programminglanguage ="Java";
 		
-		emp.displayDeveloperInfo();
-		emp.displayDetails();
+		Dev.displayDetails();
+		Dev.displayDeveloperInfo();
+		//emp.displayDetails();
 
 	}
 
