@@ -25,6 +25,8 @@ class Employee{
 class Devloper extends Employee{
 	String programminglanguage;
 	public void displayDeveloperInfo() {
+		System.out.println("Parent name is : " + name);
+		System.out.println("Parent salary is : " + salary);
 		System.out.println("Programming Language is : " + programminglanguage);
 	}
 }
