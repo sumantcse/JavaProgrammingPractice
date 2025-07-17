@@ -3,7 +3,12 @@ package ArraysPractice;
 public class LargestNumberInArray {
 
 	public static void main(String[] args) {
-		int[] array = {50,20,23,40,10};
+		int array[] = {10,20,2,1,1};
+
+		if(array.length == 0) {
+			System.out.println("Array is Empty ");
+			return;
+		}
 		int max = array[0];
 		for(int i = 0; i < array.length; i++) {
 			if(array[i] > max) {
@@ -12,5 +17,4 @@ public class LargestNumberInArray {
 		}
 		System.out.print("Max number is given array is: "+ max);
 	}
-
 }
