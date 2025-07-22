@@ -3,20 +3,22 @@ package ArraysPractice;
 public class SecondMaxNumber {
 
 	public static void main(String[] args) {
-		int[] arr = {0,3,43,2,65,57};
+		int[] arr = {28078, 19451, 935, 28892, 2242, 3570, 5480, 231};
 		int n = arr.length;
-		int First_Max = arr[0];
+		int First_Max = -1;
 		int second_Max = -1;
 	
 		if(n == 0) {
 			System.out.print("Arrays is Empty");
 			return;
 		}
-		for(int i = 1; i < n; i++) {
-			if(First_Max < arr[i]) {
-				second_Max = First_Max;
+		for(int i = 0; i < n; i++) {
+			if(First_Max < arr[i]) {				
 				First_Max = arr[i];
-			}else if(second_Max < arr[i] && arr[i] != First_Max) {
+			}
+		}	
+		for(int i = 0; i < n; i++) {
+			 if(arr[i] > second_Max && arr[i] != First_Max) {
 				second_Max = arr[i];
 			}
 			
